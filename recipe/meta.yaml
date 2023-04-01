@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.8
     - PyYaml >=5.4.1
+    - loguru >=0.6.0
 
 test:
   imports:
