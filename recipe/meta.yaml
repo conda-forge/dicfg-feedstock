@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dicfg-{{ version }}.tar.gz
-  sha256: abcb01de6c45d6ef148550f1e348c4a358577b9d88135a37a256c39bf04f99bd
-
+  sha256: 9a1930d5c476d2b06a9e78b324250a706a73544703c082c0496303ae2fab85d1
+  
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
