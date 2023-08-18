@@ -1,5 +1,5 @@
 {% set name = "dicfg" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dicfg-{{ version }}.tar.gz
-  sha256: 482144416af3708d6469914bc825bd09336ad2f51d8adcf2816c615e188c35c0
+  sha256: 6d12248be9009dfdd94d91b693ba3048ee9a3440daf21c0cbb76e16c0d26ff5e
 
 build:
   noarch: python
