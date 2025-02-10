@@ -7,20 +7,21 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dicfg-{{ version }}.tar.gz
-  sha256: 97314751b6a604f3fe053caa471cefd940d8238df37f5514d1d517a68123c126
+  sha256: de62e85469a28fe7fe7018a969bc8e3c2c9f0228544eb9c1274016824bd94b29
+
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - PyYaml >=5.4.1
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - PyYaml >=5.4.1
 
 test:
@@ -30,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/dicfg/
