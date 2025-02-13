@@ -1,5 +1,5 @@
 {% set name = "dicfg" %}
-{% set version = "0.0.17" %}
+{% set version = "0.0.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dicfg-{{ version }}.tar.gz
-  sha256: 97314751b6a604f3fe053caa471cefd940d8238df37f5514d1d517a68123c126
+  sha256: c5a6f2484b093d269b0da634434bdcc7b84a4e852ab52f27136710ebdc06c044
 
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
